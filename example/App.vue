@@ -7,11 +7,11 @@
     <section class="wrapper">
       <div class="item">
         <ImgInputer
-          v-model="file"
-          accept="image/*"
-          :maxSize="500"
-          @onExceed="exceedHandler"
-          @onChange="fileChange"
+            v-model="file"
+            accept="image/*"
+            :maxSize="500"
+            @onExceed="exceedHandler"
+            @onChange="fileChange"
         ></ImgInputer>
         <h1>
           <code>default</code>
@@ -20,12 +20,12 @@
 
       <div class="item">
         <ImgInputer
-          auto-upload
-          action="//jsonplaceholder.typicode.com/posts/"
-          :on-error="onErr"
-          v-model="file"
-          accept="image/*.jpeg"
-          @onChange="fileChange"
+            auto-upload
+            action="//jsonplaceholder.typicode.com/posts/"
+            :on-error="onErr"
+            v-model="file"
+            accept="image/*.jpeg"
+            @onChange="fileChange"
         ></ImgInputer>
         <h1>
           <code>auto-upload</code>
@@ -54,7 +54,7 @@
       </div>
 
       <div class="item">
-        <ImgInputer v-model="file" accept="image/*" :imgSrc="cloudImg" @onChange="fileChange"></ImgInputer>
+        <ImgInputer v-model="file" accept="image/*" :img-src="cloudImg" @onChange="fileChange"></ImgInputer>
         <h1>
           <code>img-src="..."</code>
         </h1>
@@ -62,11 +62,11 @@
 
       <div class="item">
         <ImgInputer
-          v-model="file"
-          accept="image/*"
-          readonly
-          imgSrc="https://images.unsplash.com/photo-1543868067-52959e8eef59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
-          @onChange="fileChange"
+            v-model="file"
+            accept="image/*"
+            readonly
+            img-src="https://images.unsplash.com/photo-1543868067-52959e8eef59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
+            @onChange="fileChange"
         ></ImgInputer>
         <h1>
           <code>readonly</code>
@@ -75,12 +75,12 @@
 
       <div class="item">
         <ImgInputer
-          v-model="file"
-          accept="image/*"
-          readonly
-          noMask
-          imgSrc="https://images.unsplash.com/photo-1468233748640-b31327627610?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=732&q=80"
-          @onChange="fileChange"
+            v-model="file"
+            accept="image/*"
+            readonly
+            noMask
+            img-src="https://images.unsplash.com/photo-1468233748640-b31327627610?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=732&q=80"
+            @onChange="fileChange"
         ></ImgInputer>
         <h1>
           <code>no-mask</code>
@@ -131,7 +131,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.cloudImg =
-        "https://images.unsplash.com/photo-1519734019-1cc9bdc4f806?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80";
+          "https://images.unsplash.com/photo-1519734019-1cc9bdc4f806?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80";
     }, 2000);
   },
 
